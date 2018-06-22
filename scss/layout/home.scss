@@ -1,0 +1,142 @@
+.principal{
+	article{
+		height: 100%;
+		background-position: center center;
+		background-size: cover;
+		
+		.side-bar{
+			    @extend %sidebar;
+		}
+
+		&:nth-child(even){
+			.side-bar{
+				float:right;
+				text-align: left;
+				padding-left: 20px;
+
+				div.extracto{
+					padding-right: 40%;
+				}
+			}
+		}
+
+		&:nth-child(odd){
+			.side-bar{
+				div.extracto{
+					padding-left: 40%;
+				}
+			}
+		}
+	}
+
+	a{
+		color: #FFF;
+		text-decoration: none;
+
+		&:hover{
+			color: $rosa;
+		}
+	}
+
+	.carousel, .carousel-inner{
+		height: 100%;
+	}
+}
+
+
+.carousel-indicators li{
+	width: 20px;
+	height: 20px;
+	margin:5px;
+	border:2px solid #FFF;
+}
+
+.carousel-indicators .active{
+	width: 22px;
+	height: 22px;
+	margin:5px;
+	background: $rosa;
+	border:2px solid #FFF;
+}
+
+.loop-total{
+	padding-top:40px;
+	background: $rosa;
+	overflow: hidden;
+	article{
+		position: relative;
+		overflow: hidden;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		outline: 5px solid $rosa;
+		margin-top:5px;
+
+		&:before{
+			padding-top:100%;
+			content: "";
+   			 display: block;
+		}
+
+		.wrap{
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    bottom: 0;
+			    right: 0;
+			    background:url(images/back-black.png);
+
+			    .portada{
+			    	display:table;
+			    	width: 100%;
+			    	height: 100%;
+			    	.titulo{
+			    		display: table-cell;
+    					vertical-align: middle;
+    					text-align: center;
+    					color: #FFF;
+
+    					h2{
+    						font-weight:bold;
+    						font-size:32px;
+    						padding:5px;
+    					}
+
+    					h3{
+    						font-weight: normal;
+    						font-size:28px;
+    						padding:10px;
+    						font-weight: 500;
+    						span{
+    							font-weight: 100;
+    						}
+    					}
+
+    					p{
+    						padding-top: 20px;
+						    font-size: 18px;
+						    font-weight: 200;
+						    background: rgba(0,0,0,0.7);
+						    padding: 15px;
+						    color: #FFF;
+						    border-radius: 10px;
+						    margin-top: 10px;
+						    color: $rosa;
+						    width: 60%;
+						    margin-left:auto;
+						    margin-right: auto;
+
+    					}
+			    	}
+			    }
+
+		}
+		.ver-pagina{
+			position: absolute;
+		    top: 0;
+		    left: 0;
+		    bottom: 0;
+		    right: 0;
+		}
+	}
+}

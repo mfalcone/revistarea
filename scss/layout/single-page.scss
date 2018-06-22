@@ -1,0 +1,24 @@
+.single-header{
+	height: 100%;
+	background-position: center center;
+	background-size: cover;
+	border-bottom:10px solid $rosa;
+	.side-bar{
+		@extend %sidebar;
+		
+		h1{
+			color: #FFF;
+		}
+		div.extracto{
+			padding-left: 40%;
+		}
+	}
+}
+
+.single-content{
+	
+	font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+	font-size:16px;
+	padding-top: 40px;
+	padding-bottom: 60px;
+}

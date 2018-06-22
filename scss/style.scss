@@ -1,0 +1,18 @@
+/*! 
+Theme Name: RevistaRea
+Theme URI: http://maxifalcone.org
+Description: Theme para la web de Revistarea.com
+Version: 0.1
+Author: Maxifalcone
+Author URI: http://maxifalcone.org
+ */
+@import 'helpers/all'; 
+@import 'vendors/all';
+@import 'base/all';
+@import 'layout/all';
+
+
+/*
+cd ../../Volumes/v1/htdocs/revistarea/wp-content/themes/revistarea/scss/
+sass --watch style.scss:../style.css --style compressed;
+*/
